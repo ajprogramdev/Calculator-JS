@@ -170,13 +170,3 @@ function divide(a,b){
   };
   
 
-
-                    /*Push to string          
-                    calculationString += !isNaN(e.target.textContent) ? e.target.textContent: 
-                                          e.target.textContent == "." ? e.target.textContent: ` ${e.target.textContent} `; 
-                                          
-                                          
-                   not modify                     
-                    displayStr.textContent = calculationString;
-                    displayV.textContent = e.target.textContent;
-                    */
