@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;   
+}
+body{
+    /*Pixabay.com*/
+    background: url('https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_960_720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;  
+    color:#5c9484;
+}
+
+#container{
+    
+    /*https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+    width: 50vh;
+    height:60vh;
+    border: solid 4px #856e4a;
+    border-radius: 2%;
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Box shadow*/
+    -webkit-box-shadow: 7px 17px 55px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 17px 55px 2px rgba(0,0,0,0.75);
+    box-shadow: 7px 17px 55px 2px rgba(0,0,0,0.75);
+     background-color: #d2caa9;
+       
+}
+
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+
+#display-container{
+
+    background-color: #e5dec2;
+    border: solid 2px #5c9484;
+    border-radius: 15px;
+    margin:10px;
+    height: 20%;
+    font-size:1.5em;
+   
+}
+#num-string{
+    font-size:0.8em;
+}
+#grid-num{
+    
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.btn{
+    cursor: pointer;
+    font-size: 1em;
+    margin:5px;
+    padding:15px;
+    background-color: #d2caa9;
+    border: solid 1px #5c9484;
+    border-radius: 10%;
+    color:#5c9484;
+    font-weight: bold;
+    
+}
+
+.btn-equal{
+    grid-column: span 3 / 5;
+    background-color: #b89c7a;
+    border-radius: 15px 50px 30px;
+}
+
+.btn:hover{
+    border: solid 1px #5c9484;
+    color:white;
+    background-color: #c1955f;
+    transform: scale(1.1);
+       
+}
+
