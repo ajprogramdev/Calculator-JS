@@ -86,4 +86,12 @@ body {
   background-color: #c1955f;
   transform: scale(1.1);
 }
+@media only screen and (min-width: 1600px) {
+  #container {
+    height: 60%;
+  }
+}
+
+
+
 
